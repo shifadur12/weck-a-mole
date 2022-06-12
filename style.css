@@ -1,0 +1,55 @@
+body{
+    text-align: center;
+    background-color: yellow;
+    align-items: center;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#game{
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 2rem 9rem;
+}
+.box{
+    margin: 0rem 31px;
+    height: 265px;
+    overflow: hidden;
+}
+.hole{
+    margin: 0rem 5px;
+    margin-top: -88px;
+    width: 250px;
+    position: sticky;
+}
+.hole img{
+    width: 250px;
+}
+.rat img {
+    height: 277px;
+    width: auto;
+}
+
+.rat{
+    position: relative;
+    top: 260px;
+}
+
+.animate{
+    animation: up 1s infinite linear;
+}
+
+@keyframes up {
+    0%{
+        top: 260px;
+    }
+    50%{
+        top: 3px;
+    }
+    100%{
+        top: 260px;
+    }
+}
